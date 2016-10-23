@@ -1,0 +1,20 @@
+<ion-view title="Login" hide-nav-bar="true" hide-back-button="true" id="page10" style="background-color:#BF2DDB;">
+    <ion-content padding="true" class="manual-ios-statusbar-padding" scroll="false">
+        <div class="spacer" style="width: 300px; height: 41px;"></div>
+        <h1 id="login-heading1" style="color:#FFFFFF;font-weight:300;text-align:center;">Login</h1>
+        <form id="login-form2" name="loginForm.form"class="list">
+            <div class="spacer" style="width: 300px; height: 27px;"></div>
+            <label class="item item-input" id="login-input4">
+                <input type="text" placeholder="Nickname" ng-model="loginForm.email">
+            </label>
+            <label class="item item-input" id="login-input3">
+                <input type="password" placeholder="Password" ng-model="loginForm.password">
+            </label>
+            <div class="spacer" style="width: 300px; height: 25px;"></div>
+            <a ng-click="login()" id="login-button8" style="border-radius:10px 10px 10px 10px;" class="button button-royal  button-block purplebutton">Submit</a>
+            <div id="login-markdown8" style="color:#ED67F4;text-align:center;">
+                <p>Recover your password</p>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

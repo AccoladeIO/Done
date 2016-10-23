@@ -1,0 +1,25 @@
+<ion-view title="Photo Capture" hide-nav-bar="true" id="page17" style="background-color:#E07C1B;">
+    <ion-content padding="true" class="manual-ios-statusbar-padding">
+        <div id="photoCapture-container10">
+            <a ui-sref="tabsController.{{back}}({item_id:{{item}}, flow_id:{{flow}}, back_link:'{{up_link}}'})" id="photoCapture-button35" style="color:#FAE9C6;" class="button button-positive button-small button-clear icon ion-ios-arrow-back"></a>
+        </div>
+
+        <div class="{{savedpicture()}}">
+        <ion-list>
+            <ion-item class="item-icon-left positive">
+                <i class="icon ion-android-cloud-done"></i>Image Saved
+            </ion-item>
+        </ion-list>
+        </div>
+
+        <div class="list card" id="photoCapture-card22">
+            <div class="{{capturedpicture()}}" style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
+                <img ng-src="{{pictureUrl}}" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="item item-body" id="photoCapture-list-item-container11">
+                <button ng-click="takePicture()" id="photoCapture-button18" class="button button-positive  button-block">Capture Image</button>
+            </div>
+        </div>
+        <button style="color:#FAE9C6;" ng-click="submitImage()" class="button button-energized  button-block orangebutton {{capturedpicture()}}">Save</button>
+    </ion-content>
+</ion-view>

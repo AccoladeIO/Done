@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--this extra .css file contains the animation styles-->
+    <link rel="stylesheet" href="css/animations.css">
+    <title>Done!</title>
+</head>
+
+<!--body tag set up with scroll spy-->
+<body data-spy="scroll"
+      data-target=".navbar-default"
+      data-offset="50">
+
+<header>
+    <!--Navbar set up with Affix-->
+    <nav class="navbar navbar-default"
+         data-spy="affix"
+         data-offset-top="300"
+         role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed slideLeft" data-toggle="collapse"
+                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Done!</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#basics">The Basics</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!--this section shows the login/signup in the top nav in larger views-->
+                <div class="nav-login hidden-xs">
+                    <button type="button" class="btn btn-purple" data-toggle="modal" data-target="#SignupModal">Sign
+                        up
+                    </button>
+                    <button type="button" class="btn btn-purple " data-toggle="modal" data-target="#LoginModal">Log in
+                    </button>
+                </div>
+            </div><!--/.nav-collapse -->
+        </div>
+        <!--this section shows the login/sighup in a seperate div from the nav bar when viewed on a mobile device-->
+        <div class="sub-header-login visible-xs hidden-sm hidden-md">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#SignupModal">Sign up
+            </button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#LoginModal">Log in</button>
+        </div>
+    </nav>
+
+</header>
+
+<!--this section contains the slider and is shown/hidden depending on screen size-->
+<div class="sub-header hidden-xs hidden-sm">
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <img class="slideImageLeft" src="images/Slide4.png" alt="...">
+                <div class="carousel-caption">
+                    <h1 class="sub-header-h1">Use Power Ups!</h1>
+                    <p class="sub-header-p"><span class="label label-danger">Power Ups!</span> allow you to craft a task
+                        feed for any workflow. </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="slideImageRight" src="images/Slide1.png" alt="...">
+                <div class="carousel-caption">
+                    <h1 class="sub-header-h1">Security First!</h1>
+                    <p class="sub-header-p"><span class="label label-danger">Done!</span> lets you build secure
+                        peer-to-peer networks. </p>
+                </div>
+            </div>
+            <div class="item active">
+                <img class="slideImageLeft" src="images/Slide3.png" alt="...">
+                <div class="carousel-caption">
+                    <h1 class="sub-header-h1">Welcome to Done!</h1>
+                    <p class="sub-header-p"><span class="label label-danger">Done!</span> is an app for people who do
+                        stuff. </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="slideImageRight" src="images/Slide2.png" alt="...">
+                <div class="carousel-caption">
+                    <h1 class="sub-header-h1">Get Productive!</h1>
+                    <p class="sub-header-p"><span class="label label-danger">Done!</span> lets you send and receive
+                        tasks </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!--this container contains the feature panels-->
+<div class="container">
+    <div class="row">
+        <section id="staff" class="page col-sm-12">
+            <div id="features" class="anchor"></div>
+            <h2>Features</h2>
+            <div class="row">
+                <section class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Mobile Client
+                            <button type="button"
+                                    class="collapsed section-toggle fadeIn arrow hidden-sm hidden-md hidden-lg"
+                                    role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                    aria-expanded="false" aria-controls="collapseOne"><span
+                                    class="glyphicon glyphicon-chevron-down" aria-hidden="true"></button>
+                        </div>
+                        <div id="collapseOne" class="section-collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="div-feature-image">
+                                    <img class="img-avatar img-responsive" src="images/png/smartphone.png">
+                                </div>
+                                <p>Done! App is available on mobile and utilizes all of the additional functionality
+                                    that mobile devices bring to workflow management!
+                                </p><br>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Desktop Client
+                            <button type="button"
+                                    class="collapsed section-toggle fadeIn arrow hidden-sm hidden-md hidden-lg"
+                                    role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo"><span
+                                    class="glyphicon glyphicon-chevron-down" aria-hidden="true"></button>
+                        </div>
+                        <div id="collapseTwo" class="section-collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="div-feature-image">
+                                    <img class="img-avatar img-responsive " src="images/png/browser.png">
+                                </div>
+                                <p>You can’t be expected to do everything on your phone, so Done! helps you manage your
+                                    Task Feeds using your desktop.
+                                </p><br>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Access anywhere
+                            <button type="button"
+                                    class="collapsed section-toggle fadeIn arrow hidden-sm hidden-md hidden-lg"
+                                    role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree"><span
+                                    class="glyphicon glyphicon-chevron-down" aria-hidden="true"></button>
+                        </div>
+                        <div id="collapseThree" class="section-collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="div-feature-image">
+                                    <img class="img-avatar img-responsive " src="images/png/cloud.png">
+                                </div>
+                                <p>Access your workflows anywhere! Break away from the restrictions of closed domain
+                                    networks by using a secure peer-to-peer solution and encounter a whole new world of
+                                    productivity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+
+    <div class="row">
+        <section id="staff" class="page col-sm-12">
+            <div class="row">
+                <section class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Security First
+                            <button type="button"
+                                    class="collapsed section-toggle fadeIn arrow hidden-sm hidden-md hidden-lg"
+                                    role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                                    aria-expanded="false" aria-controls="collapseFour"><span
+                                    class="glyphicon glyphicon-chevron-down" aria-hidden="true"></button>
+                        </div>
+                        <div id="collapseFour" class="section-collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="div-feature-image">
+                                    <img class="img-avatar img-responsive " src="images/png/locked.png">
+                                </div>
+                                <p>Done! is a security and privacy first, we achieve this through a simple key generator
+                                    and by placing the tool you need to manage your own security into your hands.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Closed Networking
+                            <button type="button"
+                                    class="collapsed section-toggle fadeIn arrow hidden-sm hidden-md hidden-lg"
+                                    role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
+                                    aria-expanded="false" aria-controls="collapseFive"><span
+                                    class="glyphicon glyphicon-chevron-down" aria-hidden="true"></button>
+                        </div>
+                        <div id="collapseFive" class="section-collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="div-feature-image">
+                                    <img class="img-avatar img-responsive " src="images/png/genius.png">
+                                </div>
+                                <p>By purposefully limiting the match making functionality of Done! App we allow you to
+                                    form secure, peer-to-peer networks that integrate seamlessly into any soft system.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Perfect for Business
+                            <button type="button"
+                                    class="collapsed section-toggle fadeIn arrow hidden-sm hidden-md hidden-lg"
+                                    role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
+                                    aria-expanded="false" aria-controls="collapseSix"><span
+                                    class="glyphicon glyphicon-chevron-down" aria-hidden="true"></button>
+                        </div>
+                        <div id="collapseSix" class="section-collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="div-feature-image">
+                                    <img class="img-avatar img-responsive " src="images/png/easel.png">
+                                </div>
+                                <p>The fact that Done! is secure, allows for private networking and gives you all of the
+                                    controls you need to manage your digital footprint it is perfect for business use –
+                                    no matter what business!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+</div>
+</div>
+<!--this section shows the paralax scroller. If the device does not support the javascript or if the screen in mobile size this section is hidden-->
+<div class="paralax-container parallax-window hidden-xs" data-parallax="scroll"
+     data-image-src="http://i63.tinypic.com/28qsohw.png">
+</div>
+
+<div class="container">
+    <!--this section contains the tab controls-->
+    <div class="row" id="mission">
+        <section class="page col-sm-12">
+            <div id="basics" class="anchor"></div>
+            <h2 style="padding-bottom: 10px;">The Basics</h2>
+
+            <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-left"></i></div>
+            <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-right"></i></div>
+            <div class="wrapper">
+                <ul class="nav nav-tabs list" id="myTab">
+                    <li class="active"><a data-toggle="tab" href="#Feed">Task Feeds</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Task Masters</a></li>
+                    <li><a data-toggle="tab" href="#menu2">Doers</a></li>
+                    <li><a data-toggle="tab" href="#menu3">Feed Keys</a></li>
+                    <li><a class="hidden-xs" data-toggle="tab" href="#menu4">PowerUps!</a></li>
+                </ul>
+            </div>
+            <!--this div contains all of the tab content. Which section is shown depends on the tab selected-->
+            <div class="tab-content">
+                <div id="Feed" class="tab-pane fade in active">
+                    <div class="container">
+
+                        <div class="row" id="mission">
+                            <section class="page col-sm-3">
+                                <img class="img-responsive hidden-xs slideRight" src="images/TaskFeeds.png">
+                            </section>
+                            <section class="page col-sm-9">
+                                <h3 style="padding-top: 35px;">Task Feeds</h3>
+                                <p>Any Done! User can create a Task Feed. These feeds are configurable workflows that
+                                    can be augmented with power ups to make them a perfect fit for any situation.
+                                    All you need to do is create a new feed and add Doers to your Task Feed.
+                                </p>
+                                <p>After you add a Doer, you can send those Doers tasks and they will let you know when
+                                    it is done!
+                                </p>
+                                <p>
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                                    officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+                                    rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                                    eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+                                    possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+                                    quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+                                    voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic
+                                    tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+                                    consequatur aut perferendis doloribus asperiores repellat.
+                                </p>
+                                <button type="button" class="btn btn-primary btn-margin">Create your first Task Feed
+                                </button>
+                            </section>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="menu1" class="tab-pane fade">
+
+                    <section class="page col-sm-3 hidden-xs">
+                        <img class="img-responsive hidden-xs slideRight" src="images/TaskMaster.png">
+                    </section>
+
+                    <section class="page col-sm-9">
+                        <h3 style="padding-top: 35px;">Task Masters</h3>
+                        <p>Done! App allows anyone to create a task along with a trusted network of people who will go
+                            out and complete that task. It does not replace business processes, or disrupt businesses it
+                            enhances them.
+                        </p>
+                        <p>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
+                            est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
+                            libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+                            maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
+                            et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
+                            sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+                            doloribus asperiores repellat.
+                        </p>
+                        <button type="button" class="btn btn-primary btn-margin">Become a Task Master</button>
+                    </section>
+
+                </div>
+
+                <div id="menu2" class="tab-pane fade">
+
+                    <section class="page col-sm-3 hidden-xs">
+                        <img class="img-responsive hidden-xs slideRight" src="images/Doers.png">
+                    </section>
+
+                    <section class="page col-sm-9">
+                        <h3 style="padding-top: 35px;">Doers</h3>
+                        <p>Done! Is all about getting stuff done. A Doer is anyone who uses Done! App for just that
+                            purpose. Doers receive tasks from Task Masters and can choose to either accept or reject
+                            them. </p>
+                        <p>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
+                            est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
+                            libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+                            maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
+                            et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
+                            sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+                            doloribus asperiores repellat.
+                        </p>
+                        <button type="button" class="btn btn-primary btn-margin">Become a Doer</button>
+                    </section>
+
+                </div>
+
+                <div id="menu3" class="tab-pane fade">
+
+                    <section class="page col-sm-3 hidden-xs">
+                        <img class="img-responsive hidden-xs slideRight" src="images/keys.png">
+                    </section>
+
+                    <section class="page col-sm-9">
+                        <h3 style="padding-top: 35px;">Feed Keys</h3>
+                        <p>Done! App is a workflow tool for soft systems. Instances where real people need to get
+                            involved and complete physical, social or abstract reasoning tasks – tasks not readily
+                            suited to common place digital workflows. Not just anyone that uses Done! App can send you
+                            tasks or find you on the network.
+                        </p>
+                        <p>Done! is privacy and security first and that is why it is perfect for business and getting
+                            stuff done. All you need to to do is generate a unique key and share it with your Task
+                            Master. Once your Task Master adds you to a Task Flow it will connect you to that Task
+                            Master.
+                        </p>
+                        <p>Done! App is secure and lets you optimize your current processes without drastically changing
+                            them. Wherever there is a task to be done, Done! App can help.
+                        </p>
+                        <p>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
+                            est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
+                            libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+                            maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
+                            et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
+                            sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+                            doloribus asperiores repellat.
+                        </p>
+                        <button type="button" class="btn btn-primary btn-margin">Find out more</button>
+                    </section>
+
+                </div>
+
+                <div id="menu4" class="tab-pane fade">
+
+                    <section class="page col-sm-3 hidden-xs">
+                        <img class="img-responsive hidden-xs slideRight" src="images/Power.png">
+                    </section>
+
+                    <section class="page col-sm-9 hidden-xs">
+                        <h3 style="padding-top: 35px;">Top 10 PowerUps!</h3>
+                        <!--this is a scrollable table-->
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th class="th-td-rank">Rank</th>
+                                <th class="th-td-power-up">PowerUp</th>
+                                <th class="th-count">Feed Count</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="filterable-cell th-td-rank">#1</td>
+                                <td class="filterable-cell th-td-power-up">Camera PowerUp!</td>
+                                <td class="filterable-cell td-count">510,000</td>
+                            </tr>
+                            <tr>
+                                <td class="filterable-cell th-td-rank">#2</td>
+                                <td class="filterable-cell th-td-power-up">Schedule PowerUp!</td>
+                                <td class="filterable-cell td-count">30,000</td>
+                            </tr>
+                            <tr>
+                                <td class="filterable-cell th-td-rank">#3</td>
+                                <td class="filterable-cell th-td-power-up">Geo Locator PowerUp!</td>
+                                <td class="filterable-cell td-count">22,000</td>
+                            </tr>
+                            <tr>
+                                <td class="filterable-cell th-td-rank">#4</td>
+                                <td class="filterable-cell th-td-power-up">Digital Signature PowerUp!</td>
+                                <td class="filterable-cell td-count">20,000</td>
+                            </tr>
+                            <tr>
+                                <td class="filterable-cell th-td-rank">#5</td>
+                                <td class="filterable-cell th-td-power-up">Digital Signature PowerUp!</td>
+                                <td class="filterable-cell td-count">20,000</td>
+                            </tr>
+                            <tr>
+                                <td class="filterable-cell th-td-rank">#6</td>
+                                <td class="filterable-cell th-td-power-up">Digital Signature PowerUp!</td>
+                                <td class="filterable-cell td-count">20,000</td>
+                            </tr>
+                            <tr>
+                                <td class="filterable-cell th-td-rank">#7</td>
+                                <td class="filterable-cell th-td-power-up">Digital Signature PowerUp!</td>
+                                <td class="filterable-cell td-count">20,000</td>
+                            </tr>
+                            <tr>
+                                <td class="filterable-cell th-td-rank">#8</td>
+                                <td class="filterable-cell th-td-power-up">Digital Signature PowerUp!</td>
+                                <td class="filterable-cell td-count">20,000</td>
+                            </tr>
+                            <tr>
+                                <td class="filterable-cell th-td-rank">#9</td>
+                                <td class="filterable-cell th-td-power-up">Digital Signature PowerUp!</td>
+                                <td class="filterable-cell td-count">20,000</td>
+                            </tr>
+                            <tr>
+                                <td class="filterable-cell th-td-rank">#10</td>
+                                <td class="filterable-cell th-td-power-up">Digital Signature PowerUp!</td>
+                                <td class="filterable-cell td-count">20,000</td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                        <button type="button" class="btn btn-primary btn-margin">See all Rankings</button>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+</div>
+
+<!--another section for panels-->
+<div class="container">
+    <div class="row">
+        <section id="staff" class="page col-sm-12">
+            <div id="resources" class="anchor"></div>
+            <h2>Resources</h2>
+            <div class="row" id="mission">
+                <section class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Community Forum
+                            <button type="button" class="section-toggle fadeIn arrow hidden-sm hidden-md hidden-lg"
+                                    role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight"
+                                    aria-expanded="false" aria-controls="collapseEight"><span
+                                    class="glyphicon glyphicon-chevron-down" aria-hidden="true"></button>
+                        </div>
+                        <div id="collapseEight" class="section-collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="div-feature-image">
+                                    <img class="img-avatar img-responsive " src="images/png/chat.png">
+                                </div>
+                                <p>Done! App has a vibrant support community moderated by our own support staff. So
+                                    please check it out if you get stuck, ask a question, answer some questions and
+                                    share your expertise.</p>
+                                <button type="button" class="btn btn-primary btn-margin">Check it out</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Tutorials
+                            <button type="button"
+                                    class="section-toggle collapsed fadeIn arrow hidden-sm hidden-md hidden-lg"
+                                    role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine"
+                                    aria-expanded="false" aria-controls="collapseNine"><span
+                                    class="glyphicon glyphicon-chevron-down" aria-hidden="true"></button>
+                        </div>
+                        <div id="collapseNine" class="section-collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="div-feature-image">
+                                    <img class="img-avatar img-responsive " src="images/png/clapboard.png">
+                                </div>
+                                <p>We have a library of up to date video tutorials that cover every single feature of
+                                    Done! App and is a great place to check out if you are just starting out. There are
+                                    also tutorials covering advanced features.</p>
+
+                                <button type="button" class="btn btn-primary btn-margin">Check it out</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            API Documentation
+                            <button type="button"
+                                    class="collapsed section-toggle fadeIn arrow hidden-sm hidden-md hidden-lg"
+                                    role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen"
+                                    aria-expanded="false" aria-controls="collapseTen"><span
+                                    class="glyphicon glyphicon-chevron-down" aria-hidden="true"></button>
+                        </div>
+                        <div id="collapseTen" class="section-collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="div-feature-image">
+                                    <img class="img-avatar img-responsive " src="images/png/dev.png">
+                                </div>
+                                <p>Done! comes with a modern full featured and documented API. We give you the tools to
+                                    use Done! for anything at all, we are solution agnostic.</p>
+                                <br>
+                                <button type="button" class="btn btn-primary btn-margin">Check it out</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="row">
+                <section class="page col-sm-12">
+                    <div id="contact" class="anchor"></div>
+                    <h2>Contact</h2>
+                    <div class="row">
+                        <section class="col-sm-4">
+                            <h3>Visit us</h3>
+                            <label>Address:</label>
+                            <p>1107/20 Rakaia Way, Docklands. 3009. Victoria. Australia</p>
+                            <!--this section contains a google map-->
+                            <div class="hidden-xs">
+                                <iframe src="//www.google.com/maps/embed/v1/place?q=1107/20%Rakaia%Way%Docklands%Melbourne
+      &zoom=13
+      &attribution_source=Google+Maps+Embed+API
+      &attribution_web_url=https://developers.google.com/maps/documentation/embed/
+      &key=AIzaSyDDFiJ4tUBByoAEszj5bYqqZAwvSLVRZKg">
+                                </iframe>
+                            </div>
+                            <label>Phone:</label>
+                            <p>0428 899 982</p>
+                            <label>Email:</label>
+                            <p>info@doneapp.com</p>
+
+                        </section>
+                        <section class="col-sm-8">
+                            <!--a basic form-->
+                            <form>
+                                <h3>Send us a message</h3>
+                                <div class="form-group">
+                                    <label data-toggle="tooltip" title="Let us know your name" for="name">What is your
+                                        name?</label>
+                                    <input type="text" class="form-control" placeholder="Your Name" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label data-toggle="tooltip" title="Let us know your email address" for="email">What
+                                        is your email address?</label>
+                                    <input type="text" class="form-control" placeholder="Email Address" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label data-toggle="tooltip" title="Enter your message here" for="comment">What is
+                                        your message?</label>
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+                                <button type="submit" data-toggle="tooltip" title="Click here to send your message"
+                                        class="btn btn-default">Submit
+                                </button>
+                            </form>
+
+                        </section>
+                    </div>
+                </section>
+
+
+            </div>
+
+    </div><!-- content container -->
+
+    <!--The following section contains two modals-->
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">Done! Log in</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="div-avatar">
+                        <img class="img-avatar img-responsive floating" src="images/avatar-08.svg">
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label data-toggle="tooltip" title="Please enter your nickname" for="recipient-name"
+                                   class="control-label">Enter your nickname:</label>
+                            <input type="text" required="required" class="form-control" id="nickname">
+                        </div>
+                        <div class="form-group">
+                            <label data-toggle="tooltip" title="Please enter your password" for="password-text"
+                                   class="control-label">Enter your password:</label>
+                            <input type="password" required="required" class="form-control" id="pwd">
+                            <small><a href="#">I have forgotten my password or nickname</a></small>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SignupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">Done! Sign up</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="div-avatar">
+                        <img class="img-avatar img-responsive floating" src="images/avatar-03.svg">
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label data-toggle="tooltip" title="Provide a new nickname" for="recipient-name"
+                                   class="control-label">Choose a nickname:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label data-toggle="tooltip" title="Provide a new password" for="password-text"
+                                   class="control-label">Choose a password:</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group">
+                            <label data-toggle="tooltip" title="Provice a valid email address" for="recipient-name"
+                                   class="control-label">Enter your email:</label>
+                            <input type="email" class="form-control" id="email">
+                            <small>You don't need to provide an email address, however an email address is required to
+                                enable account recovery features.
+                            </small>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--here we import our js files-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!--this js file is used for the paralax section-->
+    <script src="js/parallax.min.js"></script>
+    <script>
+
+        // This section controls the panel collapse and arrow toggle
+        $(".arrow").on("click", function () {
+            $(this).toggleClass("rotateOpen");
+        });
+
+        $(function () {
+            $(document).ready(function () {
+                console.log($(this).width())
+                if ($(this).width() < 768) {
+                    $('div.section-collapse').addClass(' collapse')
+                }
+                if ($(this).width() > 768) {
+                    $('div.section-collapse').removeClass(' collapse')
+                }
+            })
+        })
+
+        $(function () {
+
+            $(window).bind("resize", function () {
+                console.log($(this).width())
+                if ($(this).width() < 4768) {
+                    $('div.section-collapse').addClass(' collapse')
+                }
+                if ($(this).width() > 768) {
+                    $('div.section-collapse').removeClass(' collapse')
+                    $('div.section-collapse').removeAttr('style')
+                }
+            })
+        })
+
+        // This section manages the table scrolling
+        var hidWidth;
+        var scrollBarWidths = 40;
+
+        var widthOfList = function () {
+            var itemsWidth = 0;
+            $('.list li').each(function () {
+                var itemWidth = $(this).outerWidth();
+                itemsWidth += itemWidth;
+            });
+            return itemsWidth;
+        };
+
+        var widthOfHidden = function () {
+            return (($('.wrapper').outerWidth()) - widthOfList() - getLeftPosi()) - scrollBarWidths;
+        };
+
+        var getLeftPosi = function () {
+            return $('.list').position().left;
+        };
+
+        var reAdjust = function () {
+            if (($('.wrapper').outerWidth()) < widthOfList()) {
+                $('.scroller-right').show();
+            }
+            else {
+                $('.scroller-right').hide();
+            }
+
+            if (getLeftPosi() < 0) {
+                $('.scroller-left').show();
+            }
+            else {
+                $('.item').animate({left: "-=" + getLeftPosi() + "px"}, 'slow');
+                $('.scroller-left').hide();
+            }
+        }
+
+        reAdjust();
+
+        $(window).on('resize', function (e) {
+            reAdjust();
+        });
+
+        $('.scroller-right').click(function () {
+
+            $('.scroller-left').fadeIn('slow');
+            $('.scroller-right').fadeOut('slow');
+
+            $('.list').animate({left: "+=" + widthOfHidden() + "px"}, 'slow', function () {
+
+            });
+        });
+
+        $('.scroller-left').click(function () {
+
+            $('.scroller-right').fadeIn('slow');
+            $('.scroller-left').fadeOut('slow');
+
+            $('.list').animate({left: "-=" + getLeftPosi() + "px"}, 'slow', function () {
+
+            });
+        });
+
+        // This section enables the tool tips
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</div>
+<div class="sub-header" style="margin-top: 30px"></div>
+</body>
+</html>

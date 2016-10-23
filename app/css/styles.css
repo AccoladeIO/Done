@@ -1,0 +1,547 @@
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  border: none;
+  color: #f8f48e;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #f8f48e; /*BACKGROUND color for active*/
+  background-color: #68247e;
+}
+.navbar{
+  border-radius: 0px!important;
+}
+
+.navbar-default {
+  font-family: 'Didact Gothic', sans-serif;
+  background-color: #762b90;
+  margin-bottom: 0!important;
+  z-index:100!important;
+  width:100%!important;
+  border: 0px solid!important;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Pacifico', cursive;
+  color: white;
+}
+p{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+h1{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+h2{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+h3{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+h5{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+
+
+.anchor{
+  height: 100px;
+}
+
+.anchor-xs{
+  height: 80px;
+}
+
+
+.navbar-default .navbar-brand:hover {
+  font-family: 'Pacifico', cursive;
+  color: #f8f48e;
+}
+
+.navbar-default .navbar-brand:focus {
+  font-family: 'Pacifico', cursive;
+  color: #f8f48e;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #66CCFF;  /*change color of links in drop down here*/
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+
+  text-decoration: none;
+  background-color: silver; /*Change rollover cell color here*/
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white; /*Change active text color here*/
+}
+
+.navbar-toggle {
+  background-color: white;
+  border: none;
+}
+
+.navbar-toggle {
+  background-color: #762b90!important;
+  border: none;
+}
+
+.section-toggle {
+  background-color: #762b90!important;
+  border: none;
+  float: right;
+}
+
+.navbar-toggle:hover .icon-bar {
+  background-color: #f8f48e!important;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: white!important;
+}
+
+.logo{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  max-height: 40px;
+}
+
+header {
+  background-color: #68247e;
+}
+input{
+  font-family: 'Didact Gothic', sans-serif;
+}
+.sub-header-login{
+  text-align: center;
+  padding-top: 8px;
+  height: 52px;
+  background-color: #5cb85c;
+  z-index: 100;
+}
+button{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.sub-header {
+  height: 300px;
+  background: #68247e; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#68247e, #762b90); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#68247e, #762b90); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#68247e, #762b90); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#68247e, #762b90); /* Standard syntax */
+}
+
+.paralax-container {
+  height: 300px;
+  margin-top: 30px;
+}
+
+.sub-header-h1{
+  padding-top: 70px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+}
+.panel-heading{
+  font-family: 'Didact Gothic', sans-serif;
+}
+.panel-primary {
+  border-color: #762b90;
+}
+
+li{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.panel-primary>.panel-heading {
+  background-color: #762b90;
+  border-color: #762b90;
+}
+
+.sub-header-p{
+  font-family: 'Didact Gothic', sans-serif;
+  color: white;
+  padding-left:8px;
+}
+
+.tales {
+  width: 100%;
+  height: 300px!important;
+}
+.carousel .item {
+  height: 300px;
+}
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+
+.carousel-control.left{
+  margin-top: 52px;
+  height: 300px!important;
+  background-image: none!important;
+}
+
+.carousel-control.right{
+  margin-top: 52px;
+  height: 300px!important;
+  background-image: none!important;
+}
+
+.slideImageLeft{
+  height:300px!important;
+}
+
+.item img{
+  position: relative;!important;
+}
+
+.slideImageRight{
+  height:300px!important;
+  float:right!important;
+}
+
+.nav-login{
+  padding-top: 8px;
+  float: right;
+}
+
+.btn-purple{
+  background-color: #762b90;
+  border-color: #68247e;
+  color: white;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.btn-purple:hover{
+  background-color: #68247e;
+  border-color: #762b90;
+  color: #f8f48e;
+}
+
+.btn-purple:active{
+  background-color: #68247e;
+  border-color: #762b90;
+  color: #f8f48e;
+}
+
+.btn-purple:focus{
+  background-color: #68247e;
+  border-color: #762b90;
+  color: #f8f48e;
+}
+
+.modal-title{
+  font-family: 'Pacifico', cursive;
+  color: white;
+}
+
+.modal-header{
+  background-color: #762b90;
+}
+
+.img-avatar{
+  margin: auto;
+  max-width:50px;
+  max-height:50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+}
+
+.div-feature-image{
+  position: relative;
+  margin-bottom:10px;
+}
+
+.panel-primary{
+ margin-top: 10px;
+}
+
+#checkbox {
+  display: none;
+}
+
+.rotateOpen {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+iframe{
+border-color: transparent;
+  height:150px;
+  width:100%;
+}
+
+table {
+  width: 100%;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+thead, tbody, tr, td, th { display: block; }
+
+tr:after {
+  content: ' ';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+thead th {
+  height: 30px;
+
+  /*text-align: left;*/
+}
+
+
+
+tbody {
+  height: 150px;
+  overflow-y: auto;
+}
+
+thead {
+  /* fallback */
+}
+
+
+tbody td, thead th {
+  width: 19.2%;
+  float: left;
+}
+
+.th-td-rank{
+  width: 25%
+}
+
+.th-td-power-up{
+  width: 50%
+}
+small{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.th-count{
+  width: 25%;
+}
+
+.btn-margin{
+  margin-top: 10px;
+}
+
+.td-count{
+  width: 25%;
+  text-align: right;
+}
+
+.wrapper {
+  position:relative;
+  margin:0 auto;
+  overflow:hidden;
+  padding:5px;
+  height:50px;
+}
+
+.list {
+  position:absolute;
+  left:0px;
+  top:0px;
+  min-width:3000px;
+  margin-left:12px;
+  margin-top:0px;
+}
+
+.list li{
+  display:table-cell;
+  position:relative;
+  text-align:center;
+  cursor:grab;
+  cursor:-webkit-grab;
+  color:#efefef;
+  vertical-align:middle;
+}
+
+textarea{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.scroller {
+  text-align:center;
+  cursor:pointer;
+  display:none;
+  padding:7px;
+  padding-top:11px;
+  white-space:no-wrap;
+  vertical-align:middle;
+  background-color:#fff;
+}
+
+.scroller-right{
+  float:right;
+}
+
+.scroller-left {
+  float:left;
+}
+
+.card-search{
+  width:100%;
+}
+
+.panel-card-purple{
+  border-left: thick solid #762b90;
+  border-left-width: 10px;
+}
+
+.panel-card-red{
+  border-left: thick solid red;
+  border-left-width: 10px;
+}
+
+.panel-card-blue{
+  border-left: thick solid blue;
+  border-left-width: 10px;
+}
+
+.panel-card-green{
+  border-left: thick solid darkolivegreen;
+  border-left-width: 10px;
+}
+
+.panel-card-body{
+  text-align: left;
+}
+
+.panel-card-band{
+  text-align: center;
+  background-color: midnightblue;
+  color: white;
+  border-radius: 0!important;
+  font-family: 'Didact Gothic', sans-serif!important;
+}
+
+.panel-card-footer{
+  text-align: right;
+  background-color: white;
+}
+
+.card-header{
+  margin-left: 63px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: bold;
+  display: block;
+}
+
+.card-body{
+  margin-left: 63px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: lighter;
+  display: block;
+}
+
+.card-flow-header{
+  margin-left: 5px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: bold;
+  display: block;
+}
+
+.card-flow-body{
+  margin-left: 5px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: lighter;
+  display: block;
+}
+
+.card-footer-mute{
+  text-align: left;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: lighter;
+  color: darkgrey;
+  font-size: small;
+  float: left;
+}
+
+.card-footer-icon{
+  margin-right:10px;
+}
+
+.pill-spacer{
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+.controls-left{
+  margin-top: 10px;
+float: left;
+}
+
+.controls-right{
+  float: right;
+}
+
+.list-trans{
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.list-trans:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.header-backlink{
+  float: left;
+  margin-left: 15px;
+  margin-right:15px;
+  margin-top:9px;
+}
+
+.truncate {
+  width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-icon{
+  font-size: 0.8em;
+}
+
+option{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+select{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+label{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.power_image{
+  max-width: 100% !important;
+}

@@ -1,0 +1,30 @@
+<ion-view title="Task Detail" hide-nav-bar="true" id="page16" style="background-color:#BF2DDB;">
+    <ion-content padding="true" class="manual-ios-statusbar-padding">
+        <div id="taskDetail-container7">
+            <a ui-sref="tabsController.TaskDetailReject" id="taskDetail-button38" style="color:#F4D2F2;" class="button button-positive button-small button-clear icon ion-trash-a floatright"></a>
+            <a ui-sref="tabsController.{{back}}{{backparams}}" id="taskDetail-button15" style="color:#F4D2F2;" class="button button-positive button-small button-clear icon ion-ios-arrow-back"></a>
+        </div>
+        <div id="taskDetail-button-bar2" class="button-bar"></div>
+        <div id="taskDetail-button-bar4" class="button-bar"></div>
+        <div class="item item-body" id="taskDetail-list-item-container3">
+            <h2 id="taskDetail-heading4" style="color:#000000;font-weight:300;text-align:center;" ng-repeat="tasks in task_cards">{{tasks.task_title}}</h2>
+            <div id="taskDetail-markdown17" style="margin-top:0px;color:#000000;">
+                <p>Go to point A and take a photo of that thing.</p>
+            </div>
+        </div>
+        <div class="item item-body" id="taskDetail-list-item-container4">
+            <div id="taskDetail-button-bar5" class="button-bar"></div>
+            <div id="taskDetail-container9">
+                <ion-list id="taskDetail-list8">
+                    <ion-item class="item-icon-left item-icon-right" id="taskDetail-list-item31" ui-sref="tabsController.{{item.powerup_template_url}}({item_id:{{item.task_id}}, flow_id:'{{flow}}', back_link1:'{{back}}', back_link2:'taskDetail'})" ng-repeat="item in task_powerup">
+                        <i class="{{item.powerup_icon_ionic}}"></i>{{item.powerup_name}}
+                        <i class="icon ion-ios-eye icon-accessory"></i>
+                    </ion-item>
+                </ion-list>
+            </div>
+        </div>
+        <div class="item item-body" id="taskDetail-list-item-container5">
+            <button id="taskDetail-button34" class="button button-positive  button-block">Done</button>
+        </div>
+    </ion-content>
+</ion-view>

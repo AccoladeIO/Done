@@ -1,0 +1,16 @@
+<ion-view title="Task Flow" hide-nav-bar="true" id="page7" style="background-color:#BF2DDB;">
+    <ion-content padding="true" class="manual-ios-statusbar-padding">
+        <div id="taskFlow-container3">
+            <button id="activityFeed-button47" style="color:#F1D5D5;" class="button button-positive button-small button-clear icon ion-android-star-outline"></button>
+            <a ui-sref="tabsController.taskFlow" id="taskFlow-button33" style="color:#F4D2F2;" class="button button-positive button-small button-clear icon ion-android-add floatright"></a>
+            <a ui-sref="tabsController.taskFlow" id="taskFlow-button37" style="color:#F4D2F2;" class="button button-positive button-small button-clear icon ion-link floatright"></a>
+        </div>
+        <ion-list id="taskFlow-list6">
+            <ion-item class="item-avatar item-icon-right" id="taskFlow-list-item11" ui-sref="tabsController.taskFlowDetail({item_id:{{item.taskflow_id}}, back_link:'taskFlowDetail'})" ng-repeat="item in task_flow_cards">
+                <h2>{{item.taskflow_name}}</h2>
+                <p>{{item.taskflow_description}}</p>
+                <i class="icon ion-shuffle icon-accessory"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

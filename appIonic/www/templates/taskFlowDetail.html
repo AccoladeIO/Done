@@ -1,0 +1,29 @@
+<ion-view title="Task Flow Detail" hide-nav-bar="true" id="page20" style="background-color:#BF2DDB;">
+    <ion-content padding="true" class="manual-ios-statusbar-padding">
+        <div id="taskFlowDetail-container15">
+            <a ui-sref="tabsController.taskFlow" id="taskFlowDetail-button31" style="color:#F4D2F2;" class="button button-positive button-small button-clear icon ion-ios-arrow-back"></a>
+            <a ui-sref="tabsController.taskFlowDetailConfig({item_id:{{item_id}}, back_link1:'{{back}}', back_link2:'taskFlowDetail'})" id="taskFlowDetail-button52" style="color:#F4D2F2;" class="button button-positive button-small button-clear icon ion-gear-a floatright"></a>
+            <a ui-sref="tabsController.taskFlowMembers({item_id:{{item_id}}, back_link1:'{{back}}', back_link2:'taskFlowDetail'})" id="taskFlowDetail-button46" style="color:#F4D2F2;" class="button button-positive button-small button-clear icon ion-ios-people floatright"></a>
+            <button id="taskFlowDetail-button32" style="color:#F4D2F2;" class="button button-positive button-small button-clear icon ion-android-add floatright"></button>
+            <h2 id="taskFlowDetail-heading12" style="color:#FFFFFF;font-weight:lighter;text-align:center;">{{task_flow_cards[0].taskflow_name}}</h2>
+        </div>
+        <div id="taskFlowDetail-markdown24" style="color:#FFFFFF;text-align:center;">
+            <p>{{task_flow_cards[0].taskflow_description}}</p>
+        </div>
+        <div id="taskFlowDetail-button-bar7" class="button-bar" ng-model="status">
+            <button id="taskFlowDetail-button49" ng-click="status=0" ng-class="status ? 'button button-royal button-block purplebutton' : 'button button-positive button-block bluebutton'">Pending</button>
+            <button id="taskFlowDetail-button50" ng-click="status=1" ng-class="status ? 'button button-positive button-block bluebutton' : 'button button-royal button-block purplebutton'">Done</button>
+        </div>
+
+        <ion-list id="taskFlowDetail-list10">
+
+            <ion-item class="item-avatar item-icon-right" id="taskFlowDetail-list-item36" ui-sref="tabsController.taskDetail({item_id:{{item.task_id}}, flow_id:{{item.taskflow_id}}, back_link:'taskFlowDetail'})" ng-repeat="item in task_cards | filter:{done:status}">
+                <img ng-src="data:image/png;base64,{{item.image_base64}}">
+                <h2>{{item.task_title}}</h2>
+                <p>{{item.task_instruction}}</p>
+                <i class="icon ion-ios-eye icon-accessory"></i>
+            </ion-item>
+
+        </ion-list>
+    </ion-content>
+</ion-view>

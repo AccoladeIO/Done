@@ -1,0 +1,45 @@
+$royal: #BF2DDB;
+$energized: #E07C1B;
+$dark: #D4146A;
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.floatright {
+	float: right;
+}
+
+.purplebutton {
+	border: 1px solid #ED67F4 !important;
+}
+
+.orangebutton {
+	border: 1px solid #DBBD62 !important;
+}
+
+.redbutton {
+	border: 1px solid #E852A2 !important;
+}
+
+.bluebutton {
+	border: 1px solid #00C3FF !important;
+}
+
+body.platform-ios {
+	font-family: Montserrat, sans-serif;
+}
+
+.ionic-body.platform-ios {
+	font-family: Montserrat, sans-serif;
+}
+
+body.platform-android {
+	font-family: Montserrat, sans-serif;
+}
+
+.ionic-body.platform-android {
+	font-family: Montserrat, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.tab-item,input,button,select,textarea {
+	font-family: inherit;
+}
+
